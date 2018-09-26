@@ -1,0 +1,38 @@
+body {
+    background-color: black;
+}
+
+h1 {
+    color: white;
+}
+
+ul {
+    list-style-type: square;
+}
+#red {
+    color: red;
+}
+
+#orange {
+    color: orange;
+}
+
+#yellow {
+    color: yellow;
+}
+
+#green {
+    color: green;
+}
+
+#lightblue {
+    color: cyan;
+}
+
+#blue {
+    color: blue;
+}
+
+#purple {
+    color: purple;
+}

@@ -1,0 +1,139 @@
+body {
+    text-align: center;
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    text-transform: uppercase;
+    margin-bottom: 0px;
+    letter-spacing: 3px;
+}
+
+hr {
+    border: 2px solid lightgray;
+    width: 3%;
+}
+
+p {
+    color: grey;
+}
+
+.header p {
+    margin: 30px;
+}
+
+.title h2 {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-size: 20px;
+}
+
+.title p {
+    margin-top: 0px;
+}
+
+.intro {
+    background-color: #F6F6F6;
+}
+
+.wrapper {
+    padding: 50px;
+}
+
+.title {
+    text-align: left;
+}
+
+.person {
+    display: inline-block;
+    margin: 10px;
+}
+
+.image {
+    position: relative;
+    display: inline-flex;
+}
+
+.hidden {
+    background-color: #18B6DD;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 268px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.image:hover .hidden {
+    visibility: visible;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    float: left;
+    vertical-align: middle;
+    background-color: #5ECCE7;
+    height: 40px;
+    width: 40px;
+    margin: 2px;
+    box-sizing: border-box;
+}
+
+li a {
+    display: block;
+    margin-top: 10px;
+}
+
+.description {
+    display: inline-flex;
+}
+
+.logo {
+    position: relative;
+    padding: 20px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 600;
+    color: gray;
+}
+
+.logo img {
+    margin-bottom: 40px;
+}
+
+.logo:hover {
+    color: #18B6DD;
+}
+
+.logo:hover .first {
+    display: none;
+}
+
+.second {
+    margin-bottom: 40px;
+    display: none;
+}
+/*первый вариант */
+.logo:hover .zero {
+    content: url('./img/icon0--hover.png');
+}
+
+.logo:hover .one {
+    content: url('./img/icon1--hover.png');
+}
+/*второй вариант */
+.logo:hover .second {
+    display: inline-block;
+}
+

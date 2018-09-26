@@ -1,0 +1,156 @@
+body {
+    text-align: center;
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    text-transform: uppercase;
+    padding-top: 100px;
+    margin-bottom: 0px;
+    letter-spacing: 3px;
+}
+
+hr {
+    border: 2px solid lightgrey;
+    width: 3%;
+    margin-bottom: 30px;
+}
+
+
+.header {
+    background: linear-gradient(rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6)), 
+        url("./img/bg.jpg");
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 563px;
+    padding: 10px;
+    color: white;
+}
+
+.contact {
+    padding: 10px;
+}
+
+.contact p {
+    color: grey;
+}
+
+.images {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.images img {
+    vertical-align: middle;
+    margin: 100px 50px 150px 50px;
+}
+
+.form_wrap {
+    display: flow-root;
+    margin-bottom: 150px;
+}
+
+.form {   
+    text-align: left;
+    float:left;
+    width: 45%;
+    margin-left: 15%;
+}
+
+.form_wrap h2 {
+    text-align: left;
+    font-weight: 100;
+    margin-left: 15%;
+}
+
+.inp {
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: none;
+    border-bottom: 2px solid lightgray;
+    margin-bottom: 30px;
+}
+
+input.inp {  
+    line-height: 2;  
+}
+
+textarea.inp  {
+    line-height: 1;
+    overflow: auto;
+    resize: none;
+}
+
+input:last-child {
+    width: auto;
+    color: white;
+    background-color: #EA6852;
+    padding: 10px 40px 10px 40px;
+    border: none;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 100;
+}
+input::-moz-placeholder, textarea::-webkit-input-placeholder  { /* Firefox 19+ */
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 100;
+}
+input:-ms-input-placeholder, textarea::-webkit-input-placeholder  { /* IE 10+ */
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 100;
+}
+
+.social {
+    text-align: left;
+    float: right;
+    margin-right: 15%;
+}
+
+span {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    height: 35px;
+    width: 130px;
+    margin-bottom: 1px;
+}
+
+span img {
+    max-height: 20px;
+    margin: 7px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.be {
+    background-color: #0D9EF9;
+}
+
+.tw {
+    background-color: #51D7FD;
+}
+
+.dr {
+    background-color: #FA4D9B;
+}
+
+.fb {
+    background-color: #2A62AC;
+}
+
+.gg {
+    background-color: #F13031;
+}
+
+.footer {
+    padding: 10px;
+    background-color: #C9C9CB;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Table</title>
+    <style>
+        table {
+            width: 600px;
+            border-right: 1px solid blue;
+            border-bottom: 1px solid blue;
+        }
+        th,td {
+            border-left: 1px solid blue;
+            border-top: 1px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>1</th>
+            <th>2</th>
+            <th colspan="4">3</th>
+            <th colspan="3">4</th>
+        </tr>
+        <tr>
+            <td colspan="2">5</td>
+            <td>6</td>
+            <td>7</td>
+            <td colspan="2">8</td>
+            <td rowspan="3">9</td>
+            <td colspan="2" rowspan="3">10</td>
+        </tr>
+        <tr>
+            <td colspan="2" rowspan="2">11</td>
+            <td colspan="3">12</td>
+        </tr>
+        <tr>
+            <td colspan="2">13</td>
+            <td colspan="2">14</td>
+        </tr>
+    </table>
+</body>
+</html>
