@@ -51,7 +51,6 @@ hr {
 }
 
 .form_wrap {
-    display: flow-root;
     margin-bottom: 150px;
 }
 
@@ -151,6 +150,8 @@ span img {
 }
 
 .footer {
+    margin-top: 150px;
+    clear: both;
     padding: 10px;
     background-color: #C9C9CB;
 }
