@@ -168,7 +168,7 @@ h2 {
     margin-left: -20px;
 }
 
-.header__motto_centered-dashes {
+.dash_long {
     letter-spacing: -7px;
 }
 
@@ -186,3 +186,70 @@ h2 {
     color: #f7f7f1;
     margin-left: 10px;
 }
+
+.wrapper__grey {
+    background-color: #f7f7f1;
+}
+
+.wrapper__about {
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.about__header {
+    text-align: center;
+    
+}
+
+.about__text {
+    margin-top: 50px;
+    line-height: 2;
+    font-weight: 600;
+}
+
+.about__btn {
+    border: none;
+    background: none;
+    color: blue;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.about__more_hidden {
+    display: none;
+}
+
+.wrapper__contact {
+    padding-top: 150px;
+    padding-bottom: 150px;
+    border: 1px solid red;
+}
+
+.helper {
+    margin-left: 24px;
+}
+
+.contact__header {
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1;
+}
+
+.contact__social ul {
+    padding: 0;
+}
+
+.contact__social a {
+    color: black;
+    padding: 0; 
+}
+
+.contact__info h2 {
+    text-transform: uppercase;
+}
+
+.contact__info a {
+    color: inherit;
+    text-decoration: none;
+}
+

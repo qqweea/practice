@@ -38,15 +38,15 @@
                             </div>
                             <h1>different</h1> <br>
                             <div class="header__motto_centered-right">
-                                <h1><span class="header__motto_centered-dashes">&mdash;&mdash;&ndash;</span>folio</h1>
+                                <h1><span class="dash_long">&mdash;&mdash;&ndash;</span>folio</h1>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col col-12">
-                        
-                        
+
+
                         <ul class="social">
                             <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                             <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
@@ -55,6 +55,65 @@
                             <li><a href="#"><i class="fab fa-behance"></i></a></li>
                         </ul>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper wrapper__about wrapper__grey">
+        <div class="container">
+            <div class="row">
+                <div class="col col-12 about__header">
+                    <h1><span class="dash_long">&mdash;&mdash;&ndash;</span>&nbsp; HEY!</h1>
+                </div>
+            </div>
+            <div class="row clearfix">
+                <div class="col col-6">
+                    <img src="./img/photo.png" alt="" class="about__photo">
+                </div>
+                <div class="col col-6 about__text">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae quod consequuntur eligendi
+                        error vero temporibus aliquam incidunt dolorum saepe necessitatibus atque, facilis deleniti
+                        totam! Quasi fugiat corporis odio quaerat dolor.<button class="about__btn" id="about__more">(+)</button></p>
+                    <p class="about__more_hidden" id="about__less">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Expedita distinctio deserunt animi illo nulla! Consequuntur pariatur ullam molestiae
+                        architecto tempora!<button class="about__btn" id="about__less">(-)</button></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper wrapper__contact wrapper__grey">
+        <div class="container">
+            <div class="row clearfix">
+                <div class="col col-12 contact__header">
+                    <h1>get in <span class="dash_long">&mdash;&mdash;&ndash;</span>
+                        <br>
+                        <span class="helper">touch!</span></h1>
+                </div>
+            </div>
+            <div class="row clearfix">
+                <div class="col col-6">
+                    <div class="contact__info">
+                        <h2>OUR LOCATION</h2>
+                        <p>
+                            123 Different street <br>
+                            Lisbon, Portugal 1200 - 000 <br>
+                            <a href="tel:+351123456789">(+351) 123 456 789</a> <br>
+                            Tiago Narciso <br>
+                            <span email><a href="mailto:#">Say hello!</a></span>
+                        </p>
+                    </div>
+                    <div class="contact__social">
+                        <ul class="social">
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="fab fa-vimeo-v"></i></a></li>
+                            <li><a href="#"><i class="fab fa-behance"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col col-6 ">
+                    <img src="./img/map.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -78,6 +137,14 @@
     $("#button__close").click(function () {
         $("#button__close").hide();
         $("#button__open").show();
+    });
+    $("#about__more").click(function () {
+        $("#about__more").hide();
+        $("#about__less").show();
+    });
+    $("#about__less").click(function () {
+        $("#about__less").hide();
+        $("#about__more").show();
     });
 </script>
 
