@@ -134,6 +134,8 @@ h2 {
 
 .header__menu {
     text-align: right;
+        margin-top: 4px;
+        padding-right: 9px;
 }
 
 button:hover, button:focus {
@@ -142,14 +144,14 @@ button:hover, button:focus {
 }
 
 button:active {
-    /* outline: ridge; */
+    outline: none;
 }
 
 .header__menu button {
     color: #f7f7f1;
     border: none;
     background: none;
-    font-size: 24px;
+    font-size: 32px;
 }
 
 .btn__close {
@@ -160,39 +162,42 @@ button:active {
     color: #f7f7f1;
     text-align: center;
     text-transform: uppercase;
-    font-size: 28px;
-    margin-top: 150px;
+    margin-top: 207px;
 }
 .header__motto_centered {
     display: inline-block;
-    
+    width: 449px;
+    height: 263px;
 }
 
 .header__motto_centered h1{
     display: inline;
+    font-size: 85px;
 }
 
 .header__motto_centered-left {
     text-align: left;
+    line-height: 34px;
 }
 
 .header__motto_thin {
-    font-weight: 600;
+    font-weight: 400;
     text-decoration: line-through;
 }
 
 .header__motto_centered-right {
     text-align: right;
     position: relative;
+    line-height: 82px;
 }
 
 .dash__before::before {
     content: "";
     display: inline-block;
-    border-bottom: 10px solid #f7f7f1;
-    width: 140px;
+    border-bottom: 13px solid #f7f7f1;
+    width: 210px;
     position: absolute;
-    top: 36px;
+    top: 37px;
     left: 0;
 }
 
@@ -202,17 +207,21 @@ button:active {
 
 .social {
     list-style-type: none;
-    margin-top: 150px;
-    font-size: 20px;
+    margin-top: 207px;
+    margin-bottom: 41px;
+    font-size: 24px;
+    padding: 0;
+    margin-left: 15px;
 }
 
 .social li {
     display: inline-block;
+    width: 40px;
+    margin-right: 5px;
 }
 
 .social a {
     color: #f7f7f1;
-    margin-left: 10px;
 }
 
 .wrapper__grey {
@@ -220,13 +229,19 @@ button:active {
 }
 
 .wrapper__about {
-    padding-top: 150px;
+    padding-top: 138px;
     padding-bottom: 150px;
 }
 
 .about__header {
     text-align: center;
-    
+}
+
+.about__header h1 {
+    font-size: 40px;
+    font-weight: 700;
+    display: inline;
+    margin-left: 15px;
 }
 
 .about__text {
