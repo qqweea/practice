@@ -6,14 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Barvinok</title>
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style/normalize.css">
+    <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
         crossorigin="anonymous">
     <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/bebasneueregular" type="text/css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
-    <script src="./script.js" async></script>
+    <script src="./script/script.js" async></script>
 </head>
 
 <body>
@@ -21,7 +22,7 @@
         <div class="container" id="home">
             <div class="row align-items-center">
                 <div class="col-xl contact__address">
-                    <a href="#" class="contact__img">
+                    <a href="javascript:void(0)" class="contact__img">
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px"
                             height="18px">
                             <path fill-rule="evenodd" opacity="0.6" fill="rgb(255, 255, 255)" d="M7.740,17.222 L7.001,18.004 L6.259,17.222 C5.214,16.119 -0.001,10.441 -0.001,6.941 C-0.001,3.112 3.140,-0.004 7.000,-0.004 C10.860,-0.004 14.000,3.112 14.001,6.941 C14.001,10.516 8.381,16.546 7.740,17.222 ZM7.001,0.644 C3.500,0.644 0.653,3.469 0.653,6.941 C0.653,10.265 6.113,16.121 6.735,16.778 L7.000,17.057 L7.265,16.778 C9.524,14.395 13.348,9.642 13.348,6.941 C13.348,3.469 10.500,0.644 7.001,0.644 ZM7.001,10.005 C5.298,10.005 3.912,8.631 3.912,6.941 C3.912,5.252 5.298,3.877 7.001,3.877 C8.703,3.877 10.088,5.252 10.089,6.941 C10.089,8.631 8.703,10.005 7.001,10.005 ZM7.001,4.525 C5.657,4.525 4.565,5.609 4.565,6.941 C4.565,8.274 5.658,9.357 7.001,9.357 C8.343,9.357 9.435,8.274 9.435,6.941 C9.435,5.609 8.343,4.525 7.001,4.525 Z" />
@@ -32,17 +33,19 @@
                     </p>
                 </div>
                 <div class="col-xl header__logo">
-                    <img src="./img/header__logo.png" alt="Barvinok">
+                    <a href="javascript:void(0)"><img src="./img/header__logo.png" alt="Barvinok"></a>
                 </div>
                 <div class="col-xl contact__digital">
-                    <a href="#" class="contact__img">
+                    <a href="mailto:#" class="contact__img">
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px"
                             height="14px">
                             <path fill-rule="evenodd" fill="rgb(180, 160, 140)" d="M0.003,0.001 L0.003,13.998 L19.997,13.998 L19.997,0.001 L0.003,0.001 ZM10.000,8.645 L1.799,1.040 L18.200,1.040 L10.000,8.645 ZM6.733,6.998 L0.986,12.328 L0.986,1.667 L6.733,6.998 ZM7.478,7.688 L10.000,10.027 L12.522,7.688 L18.206,12.960 L1.794,12.960 L7.478,7.688 ZM13.266,6.998 L19.014,1.667 L19.014,12.328 L13.266,6.998 Z" />
                         </svg>
                     </a>
-                    <a href="#" class="contact__img">
-                        <img src="./img/phone.png" alt="phone">
+                    <a href="tel:#" class="contact__img">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path path fill-rule="evenodd" opacity="0.502" fill="rgb(255, 255, 255)" />
+                            <path d="M6.54 5c.06.89.21 1.76.45 2.59l-1.2 1.2c-.41-1.2-.67-2.47-.76-3.79h1.51m9.86 12.02c.85.24 1.72.39 2.6.45v1.49c-1.32-.09-2.59-.35-3.8-.75l1.2-1.19M7.5 3H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.49c0-.55-.45-1-1-1-1.24 0-2.45-.2-3.57-.57-.1-.04-.21-.05-.31-.05-.26 0-.51.1-.71.29l-2.2 2.2c-2.83-1.45-5.15-3.76-6.59-6.59l2.2-2.2c.28-.28.36-.67.25-1.02C8.7 6.45 8.5 5.25 8.5 4c0-.55-.45-1-1-1z" /></svg>
                     </a>
                 </div>
             </div>
@@ -102,9 +105,7 @@
                         ante ac orci vulputate molestie. Proin egestas sagittis turpis ut fermentum.
                     </p>
 
-                    <div class="btn__about-us">
-                        <a href="#">More&nbsp;about...</a>
-                    </div>
+                    <a href="javascript:void(0)" class="btn__about-us">More&nbsp;about...</a>
                 </div>
             </div>
             <div class="col-xl about-us__img">
@@ -120,6 +121,18 @@
                 </div>
             </div>
             <div class="row news__row">
+                <a href="javascript:void(0)"><svg class="arrow__left" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="59px" height="59px">
+                        <path fill-rule="evenodd" opacity="0.502" fill="rgb(180, 160, 140)" d="M30.871,33.407 L29.735,34.491 L22.509,27.593 L23.645,26.509 L30.871,33.407 Z" />
+                        <path fill-rule="evenodd" opacity="0.502" fill="rgb(180, 160, 140)" d="M29.129,33.407 L30.265,34.491 L37.491,27.593 L36.355,26.509 L29.129,33.407 Z" />
+                        <path fill-rule="evenodd" stroke-width="1px" stroke="rgb(180, 160, 140)" fill="none" d="M56.370,29.500 L29.500,2.630 L2.630,29.500 L29.500,56.370 L56.370,29.500 Z" />
+                    </svg></a>
+                <a href="javascript:void(0)"><svg class="arrow__right" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="59px" height="59px">
+                        <path fill-rule="evenodd" opacity="0.502" fill="rgb(180, 160, 140)" d="M30.871,33.407 L29.735,34.491 L22.509,27.593 L23.645,26.509 L30.871,33.407 Z" />
+                        <path fill-rule="evenodd" opacity="0.502" fill="rgb(180, 160, 140)" d="M29.129,33.407 L30.265,34.491 L37.491,27.593 L36.355,26.509 L29.129,33.407 Z" />
+                        <path fill-rule="evenodd" stroke-width="1px" stroke="rgb(180, 160, 140)" fill="none" d="M56.370,29.500 L29.500,2.630 L2.630,29.500 L29.500,56.370 L56.370,29.500 Z" />
+                    </svg></a>
                 <div class="col-xl-3 news__row__card">
                     <img src="./img/news-1.png" alt="sea">
                     <h2>september 21, 2018</h2>
@@ -157,12 +170,93 @@
             </div>
             <div class="row news__more">
                 <div class="col-xl">
-                    <div class="news__more__btn">
-                        <a href="#">View blog</a>
-                    </div>
+                    <a href="javascript:void(0)" class="news__more__btn">View blog</a>
                 </div>
             </div>
         </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xl">
+                <div class="feedback" id="contacts">
+                    <div class="feedback__header">
+                        <h1>Leave a feedback</h1>
+                    </div>
+                    <div class="feedback__text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis quam non
+                            <br>
+                            tempus tempus. Morbi quis consequat dui. Etiam sit amet semper nisl.
+                        </p>
+                    </div>
+                    <div class="feedback__form">
+                        <form action="#" method="GET">
+                            <div class="name">
+                                <input type="text" name="fname" id="fname" placeholder="Your name..." required>
+                                <input type="email" name="lname" id="lname" placeholder="Your email..." required>
+                            </div>
+                            <div class="comment">
+                                <textarea name="comment" id="comment" placeholder="Write your message..." required></textarea>
+                            </div>
+                            <div class="feedback__btn">
+                                <button type="submit">Send message</button>
+                            </div>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="map">
+        <img src="./img/footer__map.png" alt="">
+    </div>
+    <div class="container" id="home">
+        <div class="row align-items-center">
+            <div class="col-xl contact__address">
+                <a href="javascript:void(0)" class="contact__img">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px"
+                        height="18px">
+                        <path fill-rule="evenodd" opacity="0.6" fill="rgb(255, 255, 255)" d="M7.740,17.222 L7.001,18.004 L6.259,17.222 C5.214,16.119 -0.001,10.441 -0.001,6.941 C-0.001,3.112 3.140,-0.004 7.000,-0.004 C10.860,-0.004 14.000,3.112 14.001,6.941 C14.001,10.516 8.381,16.546 7.740,17.222 ZM7.001,0.644 C3.500,0.644 0.653,3.469 0.653,6.941 C0.653,10.265 6.113,16.121 6.735,16.778 L7.000,17.057 L7.265,16.778 C9.524,14.395 13.348,9.642 13.348,6.941 C13.348,3.469 10.500,0.644 7.001,0.644 ZM7.001,10.005 C5.298,10.005 3.912,8.631 3.912,6.941 C3.912,5.252 5.298,3.877 7.001,3.877 C8.703,3.877 10.088,5.252 10.089,6.941 C10.089,8.631 8.703,10.005 7.001,10.005 ZM7.001,4.525 C5.657,4.525 4.565,5.609 4.565,6.941 C4.565,8.274 5.658,9.357 7.001,9.357 C8.343,9.357 9.435,8.274 9.435,6.941 C9.435,5.609 8.343,4.525 7.001,4.525 Z" />
+                    </svg>
+                </a>
+                <p>1 Infinite Loop <br>
+                    Cupertino, CA 95014
+                </p>
+            </div>
+            <div class="col-xl header__logo">
+                <a href="javascript:void(0)"><img src="./img/footer__logo.png" alt="Barvinok"></a>
+            </div>
+            <div class="col-xl contact__digital">
+                <a href="mailto:#" class="contact__img">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px"
+                        height="14px">
+                        <path fill-rule="evenodd" fill="rgb(180, 160, 140)" d="M0.003,0.001 L0.003,13.998 L19.997,13.998 L19.997,0.001 L0.003,0.001 ZM10.000,8.645 L1.799,1.040 L18.200,1.040 L10.000,8.645 ZM6.733,6.998 L0.986,12.328 L0.986,1.667 L6.733,6.998 ZM7.478,7.688 L10.000,10.027 L12.522,7.688 L18.206,12.960 L1.794,12.960 L7.478,7.688 ZM13.266,6.998 L19.014,1.667 L19.014,12.328 L13.266,6.998 Z" />
+                    </svg>
+                </a>
+                <a href="tel:#" class="contact__img">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path path fill-rule="evenodd" opacity="0.502" fill="rgb(255, 255, 255)" />
+                        <path d="M6.54 5c.06.89.21 1.76.45 2.59l-1.2 1.2c-.41-1.2-.67-2.47-.76-3.79h1.51m9.86 12.02c.85.24 1.72.39 2.6.45v1.49c-1.32-.09-2.59-.35-3.8-.75l1.2-1.19M7.5 3H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.49c0-.55-.45-1-1-1-1.24 0-2.45-.2-3.57-.57-.1-.04-.21-.05-.31-.05-.26 0-.51.1-.71.29l-2.2 2.2c-2.83-1.45-5.15-3.76-6.59-6.59l2.2-2.2c.28-.28.36-.67.25-1.02C8.7 6.45 8.5 5.25 8.5 4c0-.55-.45-1-1-1z" /></svg>
+                </a>
+            </div>
+        </div>
+        <div class="row no-gutters">
+            <div class="col-xl">
+                <div class="footer__menu">
+                    <ul class="menu__list menu__list_footer">
+                        <li><a href="#home">home</a></li>
+                        <li><a href="#services">services</a></li>
+                        <li><a href="#gallery">gallery</a></li>
+                        <li><a href="#blog">blog</a></li>
+                        <li><a href="#about-us">about us</a></li>
+                        <li><a href="#contacts">contacts</a></li>
+                        <li><a href="#events">events</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copy">
+        <p>&copy; Barvinok, 2018</p>
     </div>
 </body>
 
