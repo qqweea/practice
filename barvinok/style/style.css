@@ -514,6 +514,12 @@ textarea::placeholder {
 
 .map {
     margin-bottom: 37px;
+    display: flex;
+    justify-content: center;
+}
+
+.map img {
+    width: 100%;
 }
 
 .menu__list_footer {
