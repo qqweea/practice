@@ -30,11 +30,13 @@ body {
 }
 
 .header__main {
+    font-family: 'Asap', sans-serif;
     margin: 0;
     font-size: 30px;
     line-height: 40px;
     color: #202020;
     font-weight: 400;
+    letter-spacing: -0.005em;
 }
 
 .header_green {
@@ -55,7 +57,6 @@ body {
     font-size: 16px;
     font-weight: 400;
     line-height: 30px;
-    letter-spacing: 0.02em;
 }
 
 .btn {
@@ -65,13 +66,6 @@ body {
     height: 140px;
     border-width: 1px;
     border-style: solid;
-    border-radius: 6px;
-}
-
-.btn:hover, .btn:hover * {
-    background-color: #ff0084;
-    color: white;
-    border: none;
     border-radius: 6px;
 }
 
@@ -97,6 +91,28 @@ body {
     grid-column: 3/5;
     grid-row: 5/7;
     border-color: #b10824;
+}
+
+.btn:hover, .btn:hover * {
+    color: white;
+    border: none;
+    border-radius: 6px;
+}
+
+.brn__dribble:hover {
+    background-color: #ff0084;
+}
+
+.btn__facebook:hover {
+    background-color: #3b5998;
+}
+
+.btn__twitter:hover {
+    background-color: #1eb6ef;
+}
+
+.btn__instagram:hover {
+    background-color: #517fa4;
 }
 
 .facebook {
@@ -141,17 +157,22 @@ form {
 
 input, textarea {
     box-sizing: border-box;
+    border: 0;
     margin: 0;
     padding: 0;
-    border-width: 1px;
-    border-color: #bababa;
+    border: 1px solid #bababa;
     border-radius: 6px;
-    padding: 18px;
+    padding-left: 20px;
+    padding-right: 20px;
     letter-spacing: -0.01em;
 }
 
-.input::placeholder {
-    padding: 10px;
+textarea {
+    padding-top: 15px;
+}
+
+input::placeholder, textarea::placeholder {
+    font-family: 'Asap', sans-serif;
 }
 
 input:focus, textarea:focus {
@@ -214,9 +235,17 @@ textarea {
 }
 
 .submit {
+    border: 0;
     position: absolute;
     right: 0;
     top: 0;
     height: 100%;
-    width: 6%;
+    width: 6.5%;
+}
+
+.submit:hover, .submit:active {
+    cursor: pointer;
+    background-color: #28834e;
+    border: 0;
+    outline: 0;
 }
