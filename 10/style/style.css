@@ -2,6 +2,7 @@
 font-family: 'Open Sans', sans-serif; */
 body {
     font-family: 'Rufina', serif;
+    background-color: #f7f7f7;
 }
 
 .container {
@@ -62,8 +63,8 @@ body {
     top: 65px;
     left: 0;
     background-size: 100% auto;
-  height: 30px;
-  width: 100%;
+    height: 30px;
+    width: 100%;
 }
 
 .main__menu__list, .section__menu {
@@ -90,8 +91,8 @@ body {
 .menu__item_link::after {
     position: absolute;
     content: "";
-    width: calc(100% - 18px*2);
-    border: 1px solid black;
+    width: calc(100% - 23px);
+    border: 1px solid #a19795;
     top: 100px;
     left: 50%;
     transform: translateX(-50%);
@@ -257,7 +258,7 @@ body {
 }
 
 .social__link {
-    color: #a19795;
+    color: #605a58;
     position: relative;
     display: block;
     height: 100%;
@@ -297,6 +298,7 @@ body {
 .footer__skills h1 {
     padding-bottom: 17px;
     padding-left: 16px;
+    letter-spacing: -0.01em;
 }
 
 .footer__skills p {
