@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Folio</title>
+    <link href="https://fonts.googleapis.com/css?family=Asap:400,400i,700|Karla" rel="stylesheet">
+    <link rel="stylesheet" href="./plugins/swiper/swiper.css">
+    <script src="./plugins/swiper/swiper.js" defer></script>
+    <script src="./script/init.js" defer></script>
+    <script src="./script/script.js" defer></script>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="menu__btn menu__btn--closed" id="closed">
+        <img src="./img/svg/burger.svg" alt="" id="open">
+    </div>
+    <div class="menu__btn menu__btn--open">
+        <img src="./img/svg/close.svg" alt="" id="open">
+    </div>
+    <div class="menu">
+            <a href="javasript:void(0)"><img src="./img/header_logo.png" alt="logo"></a>
+            <ul>
+                <li><a href="#home" class="anchor" id="a_home">HOME</a></li>
+                <li><a href="#about" class="anchor" id="a_about">ABOUT ME</a></li>
+                <li><a href="#services" class="anchor" id="a_services">SERVICES</a></li>
+                <li><a href="#portfolio" class="anchor" id="a_portfolio">PORTFOLIO</a></li>
+                <li><a href="#hire" class="anchor" id="a_hire">HIRE ME</a></li>
+            </ul>
+    </div>
+    <div class="wrapper">
+        <div class="header" id="home">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <a href="javasript:void(0)"><img src="./img/header_logo.png" alt="logo"></a>
+                    </div>    
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="intro">
+                            <h1>
+                                Hello, I'm <span class="bolder">Eftakher</span>
+                                <br>
+                                A <span class="bolder">FrontEnd</span> designer
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="row">
+                        <div class="col">
+                            <div class="card">
+                                <div class="card--visible">
+                                    <div class="card__img">
+                                        <img src="./img/svg/cell.svg" alt="">
+                                    </div>
+                                    <h2>UI/UX Design</h2>
+                                </div>
+                                <div class="card--hidden">
+                                    <a href="javascript:void(0)">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <div class="card--visible">
+                                    <div class="card__img">
+                                        <img src="./img/svg/screen.svg" alt="">
+                                    </div>
+                                    <h2>Branding Identity</h2>
+                                </div>
+                                <div class="card--hidden">
+                                    <a href="javascript:void(0)">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <div class="card--visible">
+                                    <div class="card__img">
+                                        <img src="./img/svg/light.svg" alt="">
+                                    </div>
+                                    <h2>Creative Idea</h2>
+                                </div>
+                                <div class="card--hidden">
+                                    <a href="javascript:void(0)">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <div class="card--visible">
+                                    <div class="card__img">
+                                        <img src="./img/svg/camera.svg" alt="">
+                                    </div>
+                                    <h2>Photography</h2>
+                                </div>
+                                <div class="card--hidden">
+                                    <a href="javascript:void(0)">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="about" id="about">
+            
+            <div class="container">
+                <div class="row">
+                    <div class="col col-6">
+                        <h1 class="about__header">Hi! I’m <span class="bolder">Eftakher</span></h1>
+                        <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis.</p>
+                        <a href="javascript:void(0)" class="btn btn--my_work">My Work</a>
+                        <a href="javascript:void(0)" class="btn btn--hire_me">Hire Me</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-container slider-2">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide slide-1"></div>
+                    <div class="swiper-slide slide-2"></div>
+                    <div class="swiper-slide slide-3"></div>
+                    ...
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination swiper-pagination-2" id="pagination-2"></div>
+    
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,12 @@
+<svg 
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ width="200px" height="21px">
+<style>
+text {
+    font-family: 'Asap', sans-serif;
+}
+</style>
+<text x="-3" fill="rgb(46, 192, 108)" transform="matrix( 1.76123595375497, 0, 0, 1.76123595375497,4.0219803728944, 20.1867977456523)" font-weight="bold" font-size="16px">SE</text>
+<text x="18" fill="#fff" transform="matrix( 1.76123595375497, 0, 0, 1.76123595375497,4.0219803728944, 20.1867977456523)" font-weight="regular" font-size="16px">FOLIO</text>
+</svg>
