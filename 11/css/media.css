@@ -1,0 +1,31 @@
+@media only screen and (max-width : 992px) {
+    .btn {
+        display: inline-block;
+    }
+    
+    .btn + .btn {
+        margin-left: 0;
+        margin-block-start: 10px;
+    }
+    
+    .about {
+        min-height: 1000px;
+    }
+    .slider-2 {
+        position: relative;
+        width: 100%;
+        max-height: 500px;
+        padding-top: 20px;
+    }
+
+    [class*="col-"] {
+        max-width: 100%;
+        flex: 1;
+    }
+    .menu {
+        /* width: 40vw; */
+    }
+    .menu * {
+        padding: 0;
+    }
+}

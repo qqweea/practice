@@ -1,11 +1,17 @@
 /* font-family: 'Asap', sans-serif;
 font-family: 'Karla', sans-serif; */
+@import 'animations.css';
+
 * {
     scroll-behavior: smooth;
 }
 
 body {
     font-family: 'Karla', sans-serif;
+}
+
+a {
+    white-space: nowrap;
 }
 
 .wrapper {
@@ -43,13 +49,16 @@ body {
 
 .menu {
     position: fixed;
-    left: 100vw;
+    right: 0;
     height: 100vh;
-    width: 25vw;
     background-color: #171717;
     z-index: 1000;
-    padding-left: 30px;
     padding-top: 42px;
+    width: 0px;
+}
+
+.menu * {
+    padding-left: 30px;
 }
 
 .menu ul {
@@ -63,19 +72,20 @@ body {
    
 }
 
-.anchor {
+.menu__link {
     font-family: 'Asap', sans-serif;
     color: #c4c4c4;
     text-decoration: none;
     font-size: 18px;
     line-height: 1.6;
+    white-space: nowrap;
 }
 
-.anchor:hover {
+.menu__link:hover {
     color: white;
 }
 
-.anchor--active {
+.menu__link--active {
     color: white;
     font-weight: 700;
 }
@@ -119,7 +129,7 @@ body {
     justify-content: center;
 }
 
-.card--visible {
+.card__name {
     padding-top: 60px;
     display: flex;
     flex-direction: column;
@@ -156,14 +166,14 @@ body {
     left: -5px;
     bottom: 0;
 }
-.card--hidden {
+.card__link {
     height: 0px;
     visibility: hidden;
     position: relative;
     z-index: 0;
 }
 
-.card--hidden a {
+.card__link a {
     color: white;
     font-size: 18px;
     font-weight: 400;
@@ -173,43 +183,21 @@ body {
     text-decoration: none;
 }
 
-.card:hover .card--visible {
+.card:hover .card__name {
     animation: up 1;
     animation-fill-mode: both;
     animation-duration: 1s;
     position: relative;
 }
 
-.card:hover .card--hidden {
+.card:hover .card__link {
     background-color: #27ae60;
     height: 50px;
+    opacity: 0;
     animation: drop 1;
     animation-fill-mode: both;
     animation-duration: 1s;
     
-}
-@keyframes drop {
-    from {
-        visibility: hidden;
-        bottom: 50px;
-    }
-    to {
-        visibility: visible;
-        bottom: 0px;
-    }
-}
-
-@keyframes up {
-    
-    from {
-        padding-top: 60px; 
-        padding-bottom: 0px;
-    }
-
-    to {
-        padding-top: 30px; 
-        padding-bottom: 18px;
-        background-color: rgba(49, 194, 109, 0.8);}
 }
 
 .about {
@@ -242,14 +230,15 @@ body {
 
 .slider-2 {
     position: absolute;
-    left: 50.7%;
+    right: 0;
     top: 0;
-    width: 640px;
+    width: calc(50% - 10px);
 }
 
-.slide-1, .slide-2, .slide-3 {
-    background-position: right;
+.slide {
+    background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     min-height: 584px;
     /* z-index: -1000; */
 }
@@ -267,7 +256,7 @@ body {
 #pagination-2 {
     transform: rotate(90deg);
     bottom: 48%;
-    left: 12px;
+    left: 13px;
     width: auto;
 }
 
@@ -305,17 +294,4 @@ body {
 .btn:hover {
     animation: fill 1 0.5s;
     animation-fill-mode: both;
-}
-
-@keyframes fill {
-
-    from {
-        border-radius: 4px;
-    }
-
-    to {
-        border-radius: 25px;
-        background-color: #2ec06c;
-        color: white;
-    }
 }
