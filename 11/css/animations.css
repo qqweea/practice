@@ -37,3 +37,27 @@
         color: white;
     }
 }
+
+@keyframes grow {
+
+    from {
+        height: 0;
+        opacity: 0;
+    }
+
+    to {
+        height: 250px;
+        opacity: 1;
+    }
+}
+
+@keyframes appear {
+
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
