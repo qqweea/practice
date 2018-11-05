@@ -1,4 +1,10 @@
 @media only screen and (max-width : 992px) {
+    h1 {
+        font-size: 2em !important;
+    }
+    .header {
+        padding: 10px 0 30px;
+    }
     .btn {
         display: inline-block;
     }
@@ -27,5 +33,33 @@
     }
     .menu * {
         padding: 0;
+    }
+    .services__card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .offset-1 {
+        display: none;
+    }
+    .social {
+        flex-wrap: nowrap;
+    }
+    
+    .clients__slider {
+        padding: 44px 30px;
+    }
+    .swiper-button-next {
+        right: 10px;
+    }
+    
+    .swiper-button-prev {
+        left: 10px;
+    }
+    .intro .swiper-pagination {
+        top: 58%;
+    }
+    .feedback {
+        padding: 10px 0 20px;
     }
 }

@@ -46,6 +46,15 @@ var swiper = new Swiper('.slider-2', {
     },
     loop: true,
   });
+
+  function reinit() {
+    intro.init();
+    swiper.init();
+    clientsSwiper.init();
+    feedback__slider.init();
+  }
+
+  document.addEventListener("resize", reinit, false);
   
   $('.slider-2').on('mouseleave', function(e){
     console.log('start autoplay');
@@ -66,4 +75,13 @@ var swiper = new Swiper('.slider-2', {
   $('.feedback__slider').on('mouseleave', function(e){
     console.log('start autoplay');
     feedback__slider.autoplay.start();
+  })
+
+  $('.intro').on('mouseenter', function(e){
+    console.log('stop autoplay');
+    intro.autoplay.stop();
+  })
+  $('.intro').on('mouseleave', function(e){
+    console.log('start autoplay');
+    intro.autoplay.start();
   })

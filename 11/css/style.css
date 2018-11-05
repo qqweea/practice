@@ -21,6 +21,7 @@ a {
 
 .wrapper {
     width: 100%;
+    overflow: hidden;
 }
 
 .wrapper, .menu {
@@ -37,7 +38,7 @@ a {
 
 .menu__btn:hover {
     cursor: pointer;
-    filter: invert(0.7);
+    filter: invert(0.6) !important;
 }
 
 .menu__btn--closed {
@@ -171,6 +172,9 @@ a {
     align-items: center;
     width: 100%;
     z-index: 10;
+    position: relative;
+    transition: padding 0.5s, height 0.5s, background-color 0.5s;
+
 }
 
 .card__img {
@@ -204,9 +208,13 @@ a {
 }
 .card__link {
     height: 0px;
-    visibility: hidden;
+    background-color: transparent;
     position: relative;
-    z-index: 0;
+    height: 50px;
+    background-color: #27ae60;
+    transform-origin: 0 0;
+    transform: rotatex(90deg);
+    transition: transform 0.5s;
 }
 
 .card__link a {
@@ -217,23 +225,21 @@ a {
     display: block;
     padding: 23px 66px;
     text-decoration: none;
+    transition: color 0.5s, padding 0.5s;
 }
 
 .card:hover .card__name {
-    animation: up 1;
-    animation-fill-mode: both;
-    animation-duration: 1s;
-    position: relative;
+    padding: 30px 0 18px;
+    background-color: rgba(49, 194, 109, 0.8);
 }
 
 .card:hover .card__link {
-    background-color: #27ae60;
-    height: 50px;
-    opacity: 0;
-    animation: drop 1;
-    animation-fill-mode: both;
-    animation-duration: 1s;
-    
+    transform: rotatex(0deg);
+
+}
+
+.card:hover .card__link a {
+
 }
 
 .about {
@@ -280,13 +286,13 @@ a {
 }
 
 .slide-1 {
-    background-image: url(../img/slide_1.jpg);
+    background-image: url(../img/about/slide_1.jpg);
 }
 .slide-2 {
-    background-image: url(../img/slide_2.jpg);
+    background-image: url(../img/about/slide_2.jpg);
 }
 .slide-3 {
-    background-image: url(../img/slide_3.jpg);
+    background-image: url(../img/about/slide_3.jpg);
 }
 
 #pagination-2 {
@@ -317,6 +323,7 @@ a {
     text-decoration: none;
     border: 1px solid #2ec06c;
     border-radius: 4px;
+    transition: border-radius 0.5s, color 0.5s, background-color 0.5s;
 }
 
 .btn--hire_me {
@@ -328,8 +335,9 @@ a {
 }
 
 .btn:hover {
-    animation: fill 1 0.5s;
-    animation-fill-mode: both;
+    border-radius: 26px;
+    background-color: #2ec06c;
+    color: white;
 }
 
 .services {
@@ -420,7 +428,6 @@ a {
 
 .client__link:hover {
     filter: none;
-    transition-duration: 0.5ms;
 }
 
 .slider-3 .swiper-wrapper {
@@ -453,7 +460,7 @@ a {
 }
 
 .work {
-    padding: 68px 0 78px;
+    padding: 68px 0 80px;
 }
 
 .swiper-button-next {
@@ -483,11 +490,14 @@ a {
 }
 
 .work-card {
-    padding-bottom: 10px;
+    padding-bottom: 8px;
     margin-bottom: 19px;
     position: relative;
     background-color: #eee;
     border-radius: 0px 0px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .work-card__name {
@@ -496,6 +506,7 @@ a {
 
 .work-card__name h3 {
     letter-spacing: 0.03em;
+    margin-top: 24px;
 }
 
 .work-card__overlay {
@@ -505,6 +516,7 @@ a {
     width: 100%;
     height: 0px;
     background-color: rgba(46, 192, 108, 0.85);
+    transition: height 0.5s, opacity 0.5s;
 }
 
 .work-card__link {
@@ -520,16 +532,18 @@ a {
     font-family: 'Asap', sans-serif;
     font-size: 16px;
     opacity: 0;
-    display: none;
+    visibility: hidden;
+    transition: opacity 0.5s, background-color 0.5s;
 }
 
 .work-card:hover .work-card__overlay {
-    animation: grow 0.5s both;
+    height: 250px;
+    opacity: 1;
 }
 
 .work-card:hover .work-card__link {
-    animation: appear 0.5s both;
-    display: inline;
+    visibility: visible;
+    opacity: 1;
 }
 
 .work-card__link:hover {
@@ -614,6 +628,7 @@ a {
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: space-between;
+    height: 299px;
     min-height: 300px;
 }
 
@@ -625,6 +640,7 @@ a {
     border-width: 1px;
     border-style: solid;
     border-radius: 6px;
+    transition: background-color 1s, color 1s;
 }
 
 .social-btn__facebook {
@@ -645,7 +661,7 @@ a {
 
 .social-btn:hover, .social-btn:hover * {
     color: white;
-    border: none;
+    /* border: none; */
     border-radius: 6px;
 }
 
@@ -702,6 +718,7 @@ a {
     justify-content: space-between;
     align-content: space-between;
     min-height: 300px;
+    height: 299px;
 }
 
 input, textarea {
@@ -773,6 +790,7 @@ textarea {
     top: 0;
     height: 100%;
     width: 6.5%;
+    transition: background-color 0.5s;
 }
 
 .form__submit__btn:hover, .form__submit__btn:active {
