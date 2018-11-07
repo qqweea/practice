@@ -57,31 +57,24 @@ var swiper = new Swiper('.slider-2', {
   document.addEventListener("resize", reinit, false);
   
   $('.slider-2').on('mouseleave', function(e){
-    console.log('start autoplay');
     swiper.autoplay.start();
   })
   $('.slider-3').on('mouseenter', function(e){
-    console.log('stop autoplay');
     clientsSwiper.autoplay.stop();
   })
   $('.slider-3').on('mouseleave', function(e){
-    console.log('start autoplay');
     clientsSwiper.autoplay.start();
   })
   $('.feedback__slider').on('mouseenter', function(e){
-    console.log('stop autoplay');
     feedback__slider.autoplay.stop();
   })
   $('.feedback__slider').on('mouseleave', function(e){
-    console.log('start autoplay');
     feedback__slider.autoplay.start();
   })
 
   $('.intro').on('mouseenter', function(e){
-    console.log('stop autoplay');
     intro.autoplay.stop();
   })
   $('.intro').on('mouseleave', function(e){
-    console.log('start autoplay');
     intro.autoplay.start();
   })

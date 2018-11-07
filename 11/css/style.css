@@ -1,56 +1,57 @@
-/* font-family: 'Asap', sans-serif;
-font-family: 'Karla', sans-serif; */
 @import 'animations.css';
 
 * {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth
 }
 
-h1, h2, h3, h4 {
-    font-family: 'Asap', sans-serif;
-    font-weight: 400;
+h1,h2,h3,h4 {
+    font-family: 'Asap',sans-serif;
+    font-weight: 400
 }
 
 body {
-    font-family: 'Karla', sans-serif;
+    font-family: 'Karla',sans-serif
 }
 
 a {
-    white-space: nowrap;
+    white-space: nowrap
 }
 
 .wrapper {
     width: 100%;
-    overflow: hidden;
+    overflow: hidden
 }
 
-.wrapper, .menu {
-    transition-duration: 0.5s;
+.menu,.wrapper {
+    -webkit-transition-duration: .5s;
+    -o-transition-duration: .5s;
+    transition-duration: .5s
 }
 
 .menu__btn {
     position: fixed;
     right: 15vw;
     top: 3.7vh;
-    z-index: 1000;
-    
+    z-index: 1000
 }
 
 .menu__btn:hover {
     cursor: pointer;
-    filter: invert(0.6) !important;
+    -webkit-filter: invert(.6)!important;
+    filter: invert(.6)!important
 }
 
-.menu__btn--closed {
+.menu__btn--closed,.menu__btn--open {
     visibility: visible;
     opacity: 1;
-    transition-duration: 0.5s;
+    -webkit-transition-duration: .5s;
+    -o-transition-duration: .5s;
+    transition-duration: .5s
 }
 
 .menu__btn--open {
     visibility: hidden;
-    opacity: 0;
-    transition-duration: 0.5s;
+    opacity: 0
 }
 
 .menu {
@@ -60,40 +61,38 @@ a {
     background-color: #171717;
     z-index: 1000;
     padding-top: 42px;
-    width: 0px;
+    width: 0
 }
 
 .menu * {
-    padding-left: 30px;
+    padding-left: 30px
 }
 
 .menu ul {
     margin: 0;
-    padding: 0;
-    padding-top: 32px;
+    padding: 32px 0 0
 }
 
 .menu li {
-    list-style-type: none;
-   
+    list-style-type: none
 }
 
 .menu__link {
-    font-family: 'Asap', sans-serif;
+    font-family: 'Asap',sans-serif;
     color: #c4c4c4;
     text-decoration: none;
     font-size: 18px;
     line-height: 1.6;
-    white-space: nowrap;
+    white-space: nowrap
 }
 
 .menu__link:hover {
-    color: white;
+    color: #fff
 }
 
 .menu__link--active {
-    color: white;
-    font-weight: 700;
+    color: #fff;
+    font-weight: 700
 }
 
 .header {
@@ -102,24 +101,23 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 636px;
-    color: white;
-    padding-top: 40px;
+    color: #fff;
+    padding-top: 40px
 }
 
 .intro__header {
-    padding-top: 107px;
+    padding-top: 107px
 }
 
 .intro {
-    /* margin-top: 80px; */
     overflow: hidden;
     height: 71px;
-    width: 800px;
+    width: 800px
 }
 
-.intro .swiper-pagination{
+.intro .swiper-pagination {
     right: 35px;
-    top: 69%;
+    top: 69%
 }
 
 .intro .swiper-pagination-bullet {
@@ -127,119 +125,137 @@ a {
     opacity: 1;
     height: 10px;
     width: 10px;
-    margin: 4px 0;
+    margin: 4px 0
 }
 
 .intro .swiper-pagination-bullet-active {
-    background-color: white;
-    opacity: 1;
+    background-color: #fff;
+    opacity: 1
 }
 
-.intro h1, .intro__header{
-    font-family: 'Karla', sans-serif;
+.intro h1,.intro__header {
+    font-family: 'Karla',sans-serif;
     font-size: 40px;
     font-weight: 400;
     line-height: 1.12;
-    margin: 0;
+    margin: 0
 }
 
 .intro h1 .bolder {
-    letter-spacing: 0.02em;
+    letter-spacing: .02em
 }
 
 .bolder {
-    font-weight: 700;
+    font-weight: 700
 }
 
 .bolder--green {
-    color: #2ec06c;
+    color: #2ec06c
 }
 
 .cards {
-    padding-top: 40px;
+    padding-top: 40px
+}
+
+.card,.card__name {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column
 }
 
 .card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
 }
 
 .card__name {
     padding-top: 60px;
-    display: flex;
-    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     width: 100%;
     z-index: 10;
     position: relative;
-    transition: padding 0.5s, height 0.5s, background-color 0.5s;
-
+    -webkit-transition: padding .5s,height .5s,background-color .5s;
+    -o-transition: padding .5s,height .5s,background-color .5s;
+    transition: padding .5s,height .5s,background-color .5s
 }
 
 .card__img {
-    position: relative;
     height: 52px;
     width: 52px;
-    border: 1px solid white;
-    border-radius: 4px;
+    border: 1px solid #fff;
+    border-radius: 4px
 }
 
-.card img {
-    /* display: block; */
+.card img,.dribble i,.facebook i,.instagram i,.twitter i {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%)
+}
+
+.about,.card h2,.card__img,.card__link {
+    position: relative
 }
 
 .card h2 {
-    font-family: 'Karla', sans-serif;
+    font-family: 'Karla',sans-serif;
     padding-top: 5px;
-    position: relative;
-    font-weight: 400;
+    font-weight: 400
 }
 
 .card h2::before {
     content: ".";
     position: absolute;
     left: -5px;
-    bottom: 0;
+    bottom: 0
 }
+
 .card__link {
-    height: 0px;
-    background-color: transparent;
-    position: relative;
     height: 50px;
     background-color: #27ae60;
+    -webkit-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
     transform-origin: 0 0;
+    -webkit-transform: rotatex(90deg);
+    -ms-transform: rotatex(90deg);
     transform: rotatex(90deg);
-    transition: transform 0.5s;
+    -webkit-transition: -webkit-transform .5s;
+    -o-transition: transform .5s;
+    transition: transform .5s;
+    transition: transform .5s,-webkit-transform .5s
 }
 
 .card__link a {
-    color: white;
+    color: #fff;
     font-size: 18px;
     font-weight: 400;
     line-height: 2.5px;
     display: block;
     padding: 23px 66px;
     text-decoration: none;
-    transition: color 0.5s, padding 0.5s;
+    -webkit-transition: color .5s,padding .5s;
+    -o-transition: color .5s,padding .5s;
+    transition: color .5s,padding .5s
 }
 
 .card:hover .card__name {
     padding: 30px 0 18px;
-    background-color: rgba(49, 194, 109, 0.8);
+    background-color: rgba(49,194,109,.8)
 }
 
 .card:hover .card__link {
-    transform: rotatex(0deg);
-
-}
-
-.card:hover .card__link a {
-
+    -webkit-transform: rotatex(0deg);
+    -ms-transform: rotatex(0deg);
+    transform: rotatex(0deg)
 }
 
 .about {
@@ -247,75 +263,79 @@ a {
     background-image: url(../img/about__bg.png);
     background-position: top;
     background-repeat: repeat-y;
-    background-size: cover;
-    position: relative;
-
+    background-size: cover
 }
 
 .about__header {
     color: #191919;
-    font-family: 'Asap', sans-serif;
+    font-family: 'Asap',sans-serif;
     font-size: 30px;
     line-height: 1;
     font-weight: 400;
     padding-top: 77px;
-    margin-bottom: 18px;
+    margin-bottom: 18px
+}
+
+.about p,.services__text p {
+    font-size: 16px;
+    text-align: justify
 }
 
 .about p {
-    font-size: 16px;
     font-weight: 400;
-    line-height: 1.85;
-    text-align: justify;
     padding-bottom: 46px;
+    line-height: 1.85
 }
 
 .slider-2 {
     position: absolute;
     right: 0;
     top: 0;
-    width: calc(50% - 10px);
+    width: calc(50% - 10px)
 }
 
 .slide {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 584px;
-    /* z-index: -1000; */
+    min-height: 584px
 }
 
 .slide-1 {
-    background-image: url(../img/about/slide_1.jpg);
+    background-image: url(../img/about/slide_1.jpg)
 }
+
 .slide-2 {
-    background-image: url(../img/about/slide_2.jpg);
+    background-image: url(../img/about/slide_2.jpg)
 }
+
 .slide-3 {
-    background-image: url(../img/about/slide_3.jpg);
+    background-image: url(../img/about/slide_3.jpg)
 }
 
 #pagination-2 {
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
     transform: rotate(90deg);
     bottom: 48%;
     left: 13px;
-    width: auto;
+    width: auto
 }
 
 #pagination-2 .swiper-pagination-bullet {
     width: 10px;
     height: 10px;
-    opacity: 0.8;
-    margin: 5px 2px;
+    opacity: .8;
+    margin: 5px 2px
 }
 
 #pagination-2 .swiper-pagination-bullet-active {
-    background-color: #30c26d;
+    background-color: #30c26d
 }
 
 .btn {
     cursor: pointer;
-    font-family: 'Asap', sans-serif;
+    font-family: 'Asap',sans-serif;
     font-size: 18px;
     line-height: 1.5;
     padding: 18.5px 64px;
@@ -323,71 +343,71 @@ a {
     text-decoration: none;
     border: 1px solid #2ec06c;
     border-radius: 4px;
-    transition: border-radius 0.5s, color 0.5s, background-color 0.5s;
+    -webkit-transition: border-radius .5s,color .5s,background-color .5s;
+    -o-transition: border-radius .5s,color .5s,background-color .5s;
+    transition: border-radius .5s,color .5s,background-color .5s
 }
 
 .btn--hire_me {
-    padding: 18.5px 68px;
+    padding: 18.5px 68px
 }
 
-.btn + .btn {
-    margin-left: 14px;
+.btn+.btn {
+    margin-left: 14px
 }
 
 .btn:hover {
     border-radius: 26px;
     background-color: #2ec06c;
-    color: white;
+    color: #fff
 }
 
 .services {
     padding: 96px 0 20px;
-    min-height: 598px;
+    min-height: 598px
 }
 
-.services h2, .services h3 {
-    font-family: 'Asap', sans-serif;
-    margin: 0;
+.services h2,.services h3 {
+    font-family: 'Asap',sans-serif;
+    margin: 0
 }
 
-.services__header {
+.services__header,.services__subheader {
     font-weight: 400;
     font-size: 30px;
     line-height: 1;
     text-align: center;
-    padding-bottom: 15px;
+    padding-bottom: 15px
 }
 
 .services__subheader {
     font-size: 18px;
-    font-weight: 400;
     line-height: 1.6;
-    text-align: center;
-    padding-bottom: 40px;
+    padding-bottom: 40px
 }
 
 .services__card {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding-top: 15px;
-    padding-bottom: 8px;
+    padding-bottom: 8px
 }
 
 .services__text h2 {
     font-size: 20px;
-    line-height: 1.5;
+    line-height: 1.5
 }
 
 .services__text p {
     color: #666;
-    font-size: 16px;
     line-height: 1.25;
-    margin-top: 7px;
-    text-align: justify;
+    margin-top: 7px
 }
 
 .services__img {
     margin: 6px 14px;
-    padding-right: 19px;
+    padding-right: 19px
 }
 
 .clients {
@@ -396,43 +416,49 @@ a {
     background-size: cover;
     min-height: 350px;
     background-repeat: no-repeat;
-    position: relative;
+    position: relative
 }
 
 .clients__header {
-    color: white;
-    font-family: 'Asap', sans-serif;
+    color: #fff;
+    font-family: 'Asap',sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 20px;
     text-align: center;
-    padding-top: 58px;
+    padding-top: 58px
 }
 
 .clients__slider {
-    padding: 44px 67px;
+    padding: 44px 67px
 }
 
 .slider-3 {
-    overflow: hidden;
+    overflow: hidden
 }
 
 .slider-3 .swiper-slide {
-    width: auto !important;
-    min-height: 48px;
+    width: auto!important;
+    min-height: 48px
 }
 
 .client__link {
-    filter: brightness(0) invert(1);
+    -webkit-filter: brightness(0) invert(1);
+    filter: brightness(0) invert(1)
 }
 
 .client__link:hover {
-    filter: none;
+    -webkit-filter: none;
+    filter: none
 }
 
 .slider-3 .swiper-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: baseline;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline
 }
 
 .slider-3__btn {
@@ -441,52 +467,51 @@ a {
     width: 10px;
     top: 60%;
     stroke: gray;
-    border: 1px solid grey;
+    border: 1px solid gray;
     border-radius: 50%;
-    padding: 7px;
+    padding: 7px
 }
 
 .slider-3__btn:hover {
-    border-color: #27ae60;
+    border-color: #27ae60
 }
 
 .swiper-button-next:hover {
-    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%2330804f'%2F%3E%3C%2Fsvg%3E");
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%2330804f'%2F%3E%3C%2Fsvg%3E")
 }
 
 .swiper-button-prev:hover {
-    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%2330804f'%2F%3E%3C%2Fsvg%3E");
-
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%2330804f'%2F%3E%3C%2Fsvg%3E")
 }
 
 .work {
-    padding: 68px 0 80px;
+    padding: 68px 0 80px
 }
 
 .swiper-button-next {
-    right: 51px;
+    right: 51px
 }
 
 .swiper-button-prev {
-    left: 52px;
+    left: 52px
 }
 
-.work__header, .work__text {
-    text-align: center;
+.work__header,.work__text {
+    text-align: center
 }
 
 .work__header h2 {
     font-size: 30px;
     line-height: 1.333;
     color: #202020;
-    margin-bottom: 22px;
+    margin-bottom: 22px
 }
 
-.work__text p{
+.work__text p {
     color: #666;
     font-size: 16px;
     line-height: 1.9;
-    margin: 0 0 52px;
+    margin: 0 0 52px
 }
 
 .work-card {
@@ -494,19 +519,26 @@ a {
     margin-bottom: 19px;
     position: relative;
     background-color: #eee;
-    border-radius: 0px 0px 10px 10px;
+    border-radius: 0 0 10px 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
-    align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
 }
 
 .work-card__name {
-    text-align: center;
+    text-align: center
 }
 
 .work-card__name h3 {
-    letter-spacing: 0.03em;
-    margin-top: 24px;
+    letter-spacing: .03em;
+    margin-top: 24px
 }
 
 .work-card__overlay {
@@ -514,78 +546,84 @@ a {
     top: 0;
     left: 0;
     width: 100%;
-    height: 0px;
-    background-color: rgba(46, 192, 108, 0.85);
-    transition: height 0.5s, opacity 0.5s;
+    height: 0;
+    background-color: rgba(46,192,108,.85);
+    -webkit-transition: height .5s,opacity .5s;
+    -o-transition: height .5s,opacity .5s;
+    transition: height .5s,opacity .5s
 }
 
 .work-card__link {
     position: absolute;
     top: 50%;
     left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
     transform: translate(-50%,-50%);
     padding: 14px 34px 16px;
-    border: 1px solid white;
-    color: white;
+    border: 1px solid #fff;
+    color: #fff;
     text-decoration: none;
     border-radius: 4px;
-    font-family: 'Asap', sans-serif;
+    font-family: 'Asap',sans-serif;
     font-size: 16px;
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.5s, background-color 0.5s;
+    -webkit-transition: opacity .5s,background-color .5s;
+    -o-transition: opacity .5s,background-color .5s;
+    transition: opacity .5s,background-color .5s
 }
 
 .work-card:hover .work-card__overlay {
     height: 250px;
-    opacity: 1;
+    opacity: 1
 }
 
 .work-card:hover .work-card__link {
     visibility: visible;
-    opacity: 1;
+    opacity: 1
 }
 
 .work-card__link:hover {
-    background-color: #2ec06c;
+    background-color: #2ec06c
 }
 
 .feedback {
-    background-image: url('../img/feedback__bg.jpg');
+    background-image: url(../img/feedback__bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
     min-height: 300px;
-    padding-top: 82px;
+    padding-top: 82px
 }
 
 .feedback__slider {
     overflow: hidden;
-    text-align: center;
+    text-align: center
 }
 
 .feedback__slider p {
-    color: white;
+    color: #fff;
     font-size: 18px;
     line-height: 1.6;
-    cursor: default;
+    cursor: default
 }
 
 .smaller {
-    font-size: 16px;
+    font-size: 16px
 }
 
 .quote {
-    margin-bottom: 16px;
+    margin-bottom: 16px
 }
 
 .quote__caption {
     margin-top: 16px;
-    letter-spacing: -0.01em;
+    letter-spacing: -.01em
 }
 
 .feedback__slider .swiper-pagination {
-    bottom: -46px;
+    bottom: -46px
 }
 
 .feedback__slider .swiper-pagination-bullet {
@@ -593,16 +631,16 @@ a {
     opacity: 1;
     height: 10px;
     width: 10px;
-    margin: 0px 2px !important;
+    margin: 0 2px!important
 }
 
 .feedback__slider .swiper-pagination-bullet-active {
-    background-color: #2ec06c;
+    background-color: #2ec06c
 }
 
 .contact {
     padding-top: 92px;
-    padding-bottom: 99px;
+    padding-bottom: 99px
 }
 
 .contact__header {
@@ -611,7 +649,7 @@ a {
     font-size: 30px;
     line-height: 1.3;
     color: #202020;
-    letter-spacing: -0.005em;
+    letter-spacing: -.005em
 }
 
 .contact__text {
@@ -620,167 +658,188 @@ a {
     color: #666;
     font-size: 16px;
     line-height: 1.5;
-    padding-bottom: 54px;
+    padding-bottom: 54px
 }
 
 .social {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -ms-flex-line-pack: justify;
     align-content: space-between;
     height: 299px;
-    min-height: 300px;
+    min-height: 300px
 }
 
 .social-btn {
     position: relative;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     width: 139px;
     height: 139px;
     border-width: 1px;
     border-style: solid;
     border-radius: 6px;
-    transition: background-color 1s, color 1s;
+    -webkit-transition: background-color 1s,color 1s;
+    -o-transition: background-color 1s,color 1s;
+    transition: background-color 1s,color 1s
 }
 
 .social-btn__facebook {
-    border-color: #3b5998;
+    border-color: #3b5998
 }
 
 .social-btn__twitter {
-    border-color: #1eb6ef;
+    border-color: #1eb6ef
 }
 
 .social-btn__instagram {
-    border-color: #517fa4;
+    border-color: #517fa4
 }
 
 .social-btn__dribble {
-    border-color: #b10824;
+    border-color: #b10824
 }
 
-.social-btn:hover, .social-btn:hover * {
-    color: white;
-    /* border: none; */
-    border-radius: 6px;
+.social-btn:hover,.social-btn:hover * {
+    color: #fff;
+    border-radius: 6px
 }
 
 .social-btn__dribble:hover {
-    background-color: #ff0084;
+    background-color: #ff0084
 }
 
 .social-btn__facebook:hover {
-    background-color: #3b5998;
+    background-color: #3b5998
 }
 
 .social-btn__twitter:hover {
-    background-color: #1eb6ef;
+    background-color: #1eb6ef
 }
 
 .social-btn__instagram:hover {
-    background-color: #517fa4;
+    background-color: #517fa4
 }
 
 .facebook {
-    color: #3b5998;
+    color: #3b5998
 }
 
 .twitter {
-    color: #1eb6ef;
+    color: #1eb6ef
 }
 
 .instagram {
-    color: #517fa4;
+    color: #517fa4
 }
 
 .dribble {
-    color: #b10824;
+    color: #b10824
 }
 
-.facebook, .twitter, .instagram, .dribble {
+.dribble,.facebook,.instagram,.twitter {
     position: absolute;
     display: inline-block;
     width: 100%;
-    height: 100%;
+    height: 100%
 }
 
-.facebook i, .twitter i, .instagram i, .dribble i {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    font-size: 50px;
+.dribble i,.facebook i,.instagram i,.twitter i {
+    font-size: 50px
 }
 
-.form form{
+.form form {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -ms-flex-line-pack: justify;
     align-content: space-between;
     min-height: 300px;
-    height: 299px;
+    height: 299px
 }
 
-input, textarea {
+input,textarea {
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    border: 0;
     margin: 0;
-    padding: 0;
     border: 1px solid #bababa;
     border-radius: 6px;
-    padding-left: 20px;
-    padding-right: 20px;
-    letter-spacing: -0.01em;
-    width: calc(50% - 10px);
+    padding: 0 20px;
+    letter-spacing: -.01em;
+    width: calc(50% - 10px)
 }
 
 textarea {
-    padding-top: 15px;
+    padding: 15px 20px 0;
     height: 160px;
-    width: 93.5%;
+    width: 93.5%
 }
 
-input::placeholder, textarea::placeholder {
-    font-family: 'Asap', sans-serif;
-    font-style: italic;
+input::-webkit-input-placeholder,textarea::-webkit-input-placeholder {
+    font-family: 'Asap',sans-serif;
+    font-style: italic
 }
 
-input:focus, textarea:focus {
-    border-radius: 6px;
+input:-ms-input-placeholder,input::-ms-input-placeholder,textarea:-ms-input-placeholder,textarea::-ms-input-placeholder {
+    font-family: 'Asap',sans-serif;
+    font-style: italic
+}
+
+input::placeholder,textarea::placeholder {
+    font-family: 'Asap',sans-serif;
+    font-style: italic
+}
+
+input:focus {
+    border-radius: 6px
+}
+
+input:focus,textarea:focus {
     border-color: #2ec06c;
-    outline: none;
+    outline: 0
 }
 
-textarea, textarea:focus {
-    border-radius: 6px 0 0 6px;
+textarea,textarea:focus {
+    border-radius: 6px 0 0 6px
 }
 
 button {
     border-radius: 0 6px 6px 0;
     border-width: 1px;
     background: #2ec06c;
-    color: white;
+    color: #fff
 }
 
 input {
-    height: 50px;
-    
+    height: 50px
 }
 
 textarea {
-    resize: none;
+    resize: none
 }
 
 .form__submit {
     position: relative;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     height: 160px;
-    width: 100%;
+    width: 100%
 }
 
 .comment {
     height: 100%;
-    width: 93.5%;
+    width: 93.5%
 }
 
 .form__submit__btn {
@@ -790,27 +849,29 @@ textarea {
     top: 0;
     height: 100%;
     width: 6.5%;
-    transition: background-color 0.5s;
+    -webkit-transition: background-color .5s;
+    -o-transition: background-color .5s;
+    transition: background-color .5s
 }
 
-.form__submit__btn:hover, .form__submit__btn:active {
+.form__submit__btn:active,.form__submit__btn:hover {
     cursor: pointer;
     background-color: #28834e;
     border: 0;
-    outline: 0;
+    outline: 0
 }
 
 .footer {
-    background-color: #eee;
+    background-color: #eee
 }
 
 .footer p {
     color: #2f2f2f;
     font-size: 16px;
     font-weight: 400;
-    letter-spacing: -0.01em;
+    letter-spacing: -.01em
 }
 
 .link {
-    text-decoration: none;
+    text-decoration: none
 }

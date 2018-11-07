@@ -41,7 +41,6 @@ function menuEscape(event) {
     if (event.key == "Escape"){
         closeMenu();
     }
-    console.log(event.key);
 }
 
 function updateAnchors() {
@@ -84,6 +83,7 @@ btnOpenMenu.addEventListener("click", openMenu, false);
 btnOpenMenu.addEventListener("click", updateAnchors, false);
 btnCloseMenu.addEventListener("click", closeMenu, false);
 window.onhashchange = function() {updateAnchors()};
+document.addEventListener("scroll", updateAnchors, false);
 window.onload = function () {updateAnchors()};
 document.addEventListener("scroll", changeColor, false);
 window.addEventListener("keydown", menuEscape, false);
