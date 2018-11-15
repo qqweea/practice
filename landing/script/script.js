@@ -90,7 +90,7 @@ window.addEventListener("keydown", menuEscape, false);
 window.addEventListener("resize", updateW, false);
 */
 function bullets() {
-    let pag = document.getElementById('trainers__pagination').children;;
+    let pag = document.getElementById('trainers__pagination').children;
     let add = 1;
     for (let i = 0; i < pag.length; i++) {
         pag[i].classList.add('trainer-'+add);
@@ -100,3 +100,61 @@ function bullets() {
 }
 
 window.onload = bullets();
+// Form Variables
+let form = document.getElementById("form");
+let name = document.getElementById('name');
+let email = document.getElementById('email');
+let phone = document.getElementById('phone');
+let error = document.querySelector('.error');
+
+name.addEventListener('keyup', function(event){let name = event.target; validateInp(name)}, false);
+email.addEventListener('keyup', function(event){let name = event.target; validateInp(name)}, false);
+phone.addEventListener('keyup', function(event){let name = event.target; validateInp(name)}, false);
+
+function validateInp(ele) {
+    
+    let reg = '';
+    switch(ele.id){
+        case 'name':
+            reg = /[a-zA-Zа-яА-Я]+/gum;
+            break;  
+        case 'email':
+            reg = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            break;
+        case 'phone':
+            reg = /^[\d\(\)\+\s/-]+$/;
+            break;
+        }
+    let v = (reg.test(ele.value)) ? ele.style.borderColor = 'green':ele.style.borderColor = 'red';
+}
+
+
+function formAdd(ele) {
+    document.getElementsByClassName('inp--'+ele.id)[0].classList.add('inp--active');
+}
+function formRem(ele) {
+    if(ele.value === '')
+    document.getElementsByClassName('inp--'+ele.id)[0].classList.remove('inp--active');
+}
+
+
+form.addEventListener("focus", function( event ) {let ele = event.target; formAdd(ele)}, true);
+form.addEventListener("focusout", function( event ) {let ele = event.target; formRem(ele)}, true);
+
+form.addEventListener("submit", function (event) {
+    
+    if(!(name.validity.valid && email.validity.valid) || !(name.validity.valid && phone.validity.valid)){
+        event.preventDefault();
+    }
+    
+
+    if (!email.validity.valid) {
+      
+      // If the field is not valid, we display a custom
+      // error message.
+      error.innerHTML = "I expect an e-mail, darling!";
+      error.className = "error active";
+      // And we prevent the form from being sent by canceling the event
+      event.preventDefault();
+    }
+  }, false);

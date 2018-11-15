@@ -6,6 +6,13 @@ var trainers = new Swiper('.trainers__slider', {
   },
 });
 
+var video__slider = new Swiper('.video__slider', {
+  slidesPerView: 3,
+  spaceBetween: 50,
+  initialSlide: 1,
+  centeredSlides: true,
+});
+
 
   function reinit() {
     trainers.init();
