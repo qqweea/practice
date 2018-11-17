@@ -280,7 +280,7 @@ h1 {
       height: 270px;
       border-radius: 0;
       margin: 34px 0 !important;
-      transition: height, width, 0.5s;
+      transition: height, width 0.5s;
 }
 
 .swiper-pagination-bullet-active {
@@ -480,10 +480,12 @@ h1 {
 }
 
 .video__slider .swiper-slide {
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
     min-height: 605px;
     max-width: 425px;
+    background-size: cover;
+    transition: min-height, min-width, 1s;
 }
 
 .video__slider .swiper-slide-active {
@@ -546,6 +548,10 @@ h1 {
     background-color: none;
 }
 
+.inp--relative {
+    position: relative;
+}
+
 #email {
     width: 470px;
 }
@@ -562,7 +568,6 @@ h1 {
 }
 
 .inp {
-    position: relative;
     color: #454c4c;
     font-family: 'Fira Sans', sans-serif;
     font-size: 30px;
@@ -570,30 +575,29 @@ h1 {
     line-height: 2;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-}
-
-.inp::before {
-    content: '';
-    /* display: block; */
     position: absolute;
-    top: -6px;
+    top: -5px;
     left: 0;
     width: 250px;
     height: 10px;
     transition: top, font-size 0.5s;
 }
 
-.inp--name::before {
-    content: 'ИМЯ';
-}
-.inp--email::before {
-    content: 'E-MAIL';
-}
-.inp--phone::before {
-    content: 'ТЕЛЕФОН';
+.inp:hover {
+    cursor: text;
 }
 
-.inp--active::before {
+.inp--name {
+    left: 0px;
+}
+.inp--email {
+    left: 0px;
+}
+.inp--phone {
+    left: 0px;
+}
+
+.inp--active {
     top: -18px;
     font-size: 15px;
     color: #777;

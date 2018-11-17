@@ -11,6 +11,13 @@ var video__slider = new Swiper('.video__slider', {
   spaceBetween: 50,
   initialSlide: 1,
   centeredSlides: true,
+  autoheight: true,
+  slideToClickedSlide: true,
+  on:  {
+    transitionEnd: function () {
+      this.pagination.update();
+    },
+  }
 });
 
 
