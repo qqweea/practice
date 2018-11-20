@@ -17,7 +17,11 @@ var video__slider = new Swiper('.video__slider', {
     transitionEnd: function () {
       this.pagination.update();
     },
-  }
+  },
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
 });
 
 
