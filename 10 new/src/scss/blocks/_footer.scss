@@ -1,122 +1,13 @@
-.wrapper--footer {
-    background-color: #605a58;
-    margin-top: 27px;
-    padding: 10px 0;
-    
-    h3 {
-        font-size: 28px;
-        font-weight: 400;
-        line-height: 1;
-        color: white;
-    }
-}
-.wrapper--subfooter {
-    background-color: #474241;
-}
-
-.contact__header {
-    margin-bottom: 10px;
-}
-
-.about__info {
-
-    
-    img {
-        margin-top: 30px;
-        display: block;
-    }
-
-    p {
+.footer {
+    &__copy {
         opacity: 0.5;
         color: white;
         font-family: 'Open Sans', sans-serif;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 1.5;
-        margin-top: 13px;
-    }
-}
-
-.contact {
-    padding: 0 20px;
-}
-
-.social-list {
-    display: flex;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-
-    &__item{
-        padding-right: 17px;
-    }
-
-    &__link {
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        text-decoration: none;
-        min-width: 36px;
-        min-height: 36px;
-        padding: 5px;
-        border-radius: 50%;
-        color: #605a58;
-        background-color: #474241;
-        position: relative;
-        & i {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-    }
-
-    
-}
-
-.about__text {
-    p {
-        opacity: 0.66;
-        color: white;
-        font-family: 'Open Sans', sans-serif;
-        font-size: 16px;
+        font-size: 12px;
         font-weight: 300;
-        line-height: 1.5;
-        margin-top: 20px;
-    }
-}
-
-.skills__header {
-    margin-bottom: 34px;
-    margin-left: 4px;
-}
-
-.bar {
-    display: flex;
-    justify-content: flex-end;
-
-    &__name {
-        color: white;
-        font-family: 'Open Sans', sans-serif;
-        font-size: 19px;
-        font-weight: 400;
-        line-height: 1;
-        margin: 0 14px 16px 0;
-        display: block;
-
-    }
-
-    &__content {
-        width: 80%;
-        height: 15px;
-        position: relative;
-        background-color: rgba($color: #fff, $alpha: .3);
-
-        &--fill {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 0;
-        }
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 16px;
+        margin-bottom: 18px;
     }
 }

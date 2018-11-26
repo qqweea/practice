@@ -1,0 +1,36 @@
+.social-list {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    &__item {
+        padding-right: 17px;
+    }
+
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        text-decoration: none;
+        min-width: 36px;
+        min-height: 36px;
+        padding: 5px;
+        border-radius: 50%;
+        color: #605a58;
+        background-color: #474241;
+        position: relative;
+        transition: all 0.5s;
+
+        & i {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        &:hover {
+            background-color: #f79440;
+        }
+    }
+
+}

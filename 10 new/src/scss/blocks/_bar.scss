@@ -1,0 +1,46 @@
+
+.bar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    &__header {
+        margin-bottom: 26px;
+        margin-left: 4px;
+    }
+
+    &__name {
+        color: white;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 19px;
+        font-weight: 400;
+        line-height: 1;
+        margin: 8px 14px 8px 0;
+        display: block;
+
+    }
+
+    &__content {
+        width: 80%;
+        height: 15px;
+        position: relative;
+        background-color: rgba($color: #fff, $alpha: .3);
+        transition: all 0.5s;
+        
+        &--fill {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            background-color: #474241;
+            transition: background-color 0.3s, width 0.3s ease-in 0.3s;
+        }
+    }
+    &:hover &__content {
+        background-color: white;
+        &--fill {
+            background-color: #f79440;
+        }
+    }
+}

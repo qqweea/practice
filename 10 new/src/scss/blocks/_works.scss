@@ -1,0 +1,13 @@
+.works {
+    display: block;
+    margin-bottom: 35px;
+    max-width: 234px;
+
+    &__imgage {
+        max-width: 234px;
+        transition: all 0.5s;
+        &:hover {
+            filter: sepia(1000%);
+        }
+    }
+}

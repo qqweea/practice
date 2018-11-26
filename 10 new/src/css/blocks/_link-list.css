@@ -1,0 +1,37 @@
+.link-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  padding: 15px 0;
+  position: relative; }
+  .link-list__item {
+    padding: 10px 18px; }
+    .link-list__item a {
+      text-decoration: none;
+      color: #a19795;
+      font-weight: 400; }
+    .link-list__item--active a {
+      color: #474241;
+      font-weight: 700; }
+  .link-list::after {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 10px;
+    width: calc(100vw - 20px);
+    top: 63px;
+    background-image: url(../img/shadow.png);
+    background-repeat: no-repeat;
+    background-position: bottom; }
+
+/*# sourceMappingURL=_link-list.css.map */

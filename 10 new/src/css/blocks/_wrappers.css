@@ -1,0 +1,17 @@
+.wrapper--body {
+  background-color: #f7f7f7;
+  padding-bottom: 27px; }
+
+.wrapper--footer {
+  background-color: #605a58;
+  padding: 10px 0; }
+  .wrapper--footer h3 {
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 1;
+    color: white; }
+
+.wrapper--subfooter {
+  background-color: #474241; }
+
+/*# sourceMappingURL=_wrappers.css.map */
