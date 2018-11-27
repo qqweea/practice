@@ -1,6 +1,7 @@
 .link-list {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     list-style-type: none;
     padding: 0;
@@ -41,17 +42,7 @@
             color: #474241;
         }
     }
-    &::after {
-        content: '';
-        position: absolute;
-        display: block;
-        height: 10px;
-        width: calc(100vw - 20px);
-        top: 63px;
-        background-image: url(../img/shadow.png);
-        background-repeat: no-repeat;
-        background-position: bottom;
-    }
+    
     &--smaller {
         justify-content: flex-start;
         padding: 0;
